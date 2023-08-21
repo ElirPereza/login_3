@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Contenedor padre*/
+.from{
+    width: 100%;
+    height: 100vh; /*Abarca todo lo que hay en pantalla*/
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    background: #e0e0ec;
+}
+
+/*Contenedor hijo*/
+.tab-content{
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px; /*Margen*/
+    border-radius: 6px;
+    background: #fff;
+}
+
+/*botones de inicio de seción*/
+/*todos los botones*/
+button{
+    width: 100%;
+    height: 45px;
+    margin: 15px 0px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    position: relative;
+}
+
+.button-acc button i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+    font-size: 20px; /*Cambiar tamaño del icono*/
+}
+.gg, .apid{
+    background: #ffffff;
+    border-style: none;
+    border-radius: 10px;
+    color: #000;
+    font-size: 15px; /*Cambiar tamaño de letra
+    */
+}
+/*hover para cambiar de color cuando el puntero esté sobre el boton*/
+.gg:hover, .apid:hover{
+    background: #d4d4d4;
+}
+
+/*Color del icono de google*/
+.bxl-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Linea de separación*/
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+.line::before{
+    content: 'Or';
+    position: absolute;
+    font-size: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -70%);
+    background-color: #FFF;
+    color: none;
+    padding: 0 15px;
+} 
+
+/*label y input*/
+.field-wrap {
+    position: relative;
+}
+
+.field-wrap label{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.field-wrap input{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d4d4d4;
+    
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.field-wrap input::placeholder{
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.fa-eye-slash{
+    position: absolute;
+    top: 50%;
+    transform: translateY(10%);
+    right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+/*Para ocultar icono*/
+.oculto {
+    display: none;
+}
+
+.button-login, .reset-pass, .button-signin{
+    background: #255AFE;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+
+/*Link forgot y sign up*/
+.forgot{
+    text-align: end;
+    margin-top: 10px;
+}
+
+.link-signup, .back-login, .link-login{
+    text-align: center;
+}
